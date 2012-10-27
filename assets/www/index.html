@@ -1,0 +1,141 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Muzeeli</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1"> 
+<link rel="stylesheet" href="css/jquery.mobile-1.1.1.min.css" />
+<link rel="stylesheet" href="css/muzeeli.css" />
+<script type="text/javascript" charset="utf-8" src="js/cordova-2.1.0.js"></script>
+<script src="js/jquery-1.8.2.min.js"></script>
+<script src="js/jquery.mobile-1.1.1.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="js/jquery.localize.js"></script>
+<script type="text/javascript" charset="utf-8" src="js/PhoneListener.js"></script>
+<script type="text/javascript" charset="utf-8" src="js/share.js"></script>
+<script type="text/javascript" charset="utf-8" src="js/statusbarnotification.js"></script>
+<script type="text/javascript" charset="utf-8" src="js/analytics.js"></script>
+<script type="text/javascript" charset="utf-8" src="js/muzeeli.js"></script>
+
+
+</head>
+<body>
+
+<!-- Start of player page -->
+
+<div data-role="page" id="player">
+<div data-role="header">
+<h1>Muzeeli</h1>
+</div>
+<div data-role="content" class="center">
+<div class="playerhaut">
+<div id="radioname"></div>
+<div id="picto"></div>
+<div id="width"></div>
+<div id="error">Pas d'accès à Internet</div>
+</div>
+<div class="playercentre">
+<div class="colg">
+<div id="boxsong">
+<div id="title">Titre Inconnu</div>
+<div id=artists>Artiste inconnu</div>
+</div>
+<div id="cover"></div>
+</div>
+<div class="cold">
+<div class="ui-grid-a">
+<div class="ui-block-a">
+<a href="#" data-role="button" id="play"><span data-localize="play">Play</span></a>
+</div>
+<div class="ui-block-b">
+<a href="#" data-role="button" id="stop">Stop</a>
+</div></div></div></div>
+<div class="playerbas">
+<div id="callmeback"></div>
+<div id="message"></div>
+</div></div>
+<div data-role="footer" class="footer">
+<ul data-role="controlgroup" data-type="horizontal" class="localnav">
+<li><a href="#player" data-role="button" data-transition="pop" class="ui-btn-active">Player</a></li>
+<li><a href="#sms" data-role="button" data-transition="pop">Dédicace</a></li>
+<li><a href="#facebook" data-role="button" data-transition="pop">Social</a></li>
+<li><a href="#plus" data-role="button" data-transition="pop">Plus</a></li>
+<li><a href="#" data-role="button" class="quit">Quitter</a>
+</ul>
+</div>
+</div>
+
+<!-- Start of sms page -->
+
+<div data-role="page" id="sms">
+<div data-role="header">
+<h1>Muzeeli</h1>
+</div>
+<div data-role="content">
+<div id="radioname"></div>
+<div id="text">
+<p>Envoyez nous un SMS ... il sera affiché sur le site de la radio !</p>
+<p>Coût de la dédicace :</p><p> 0,5 euros + coût du SMS</p>
+<p>Envoyez MUZEELI DEDI suivi par un espace et votre dédicace au 71018</p>
+</div>
+<div id="logosms"></div>
+<a href="sms:71018" data-role="button" id="sendsms"><span data-localize="sendsms">Envoyer une dédicace</span></a>
+</div>
+<div data-role="footer" class="footer">
+<ul data-role="controlgroup" data-type="horizontal" class="localnav">
+<li><a href="#player" data-role="button" data-transition="pop">Player</a></li>
+<li><a href="#sms" data-role="button" data-transition="pop" class="ui-btn-active">Dédicace</a></li>
+<li><a href="#facebook" data-role="button" data-transition="pop">Social</a></li>
+<li><a href="#plus" data-role="button" data-transition="pop">Plus</a></li>
+<li><a href="#" data-role="button" class="quit">Quitter</a>
+</ul>
+</div>
+</div>
+
+<!-- Start of facebook page -->
+
+<div data-role="page" id="facebook">
+<div data-role="header">
+<h1>Muzeeli</h1>
+</div>
+<div data-role="content">
+<div id="radioname"></div>
+<h2>Suivez nous sur les réseaux sociaux ...</h2>
+<a href="" id="urlfacebook" data-role="button"><img src="css/images/facebook.png" id="iconefacebook" /></a>
+<a href="" id="urltwitter" data-role="button"><img src="css/images/twitter.png" id="iconetwitter" /></a>
+<a href="" id="urlmyspace" data-role="button"><img src="css/images/myspace.png" id="iconemyspace" /></a>
+
+</div>
+<div data-role="footer" class="footer">
+<ul data-role="controlgroup" data-type="horizontal" class="localnav">
+<li><a href="#player" data-role="button" data-transition="pop">Player</a></li>
+<li><a href="#sms" data-role="button" data-transition="pop">Dédicace</a></li>
+<li><a href="#facebook" data-role="button" data-transition="pop" class="ui-btn-active">Social</a></li>
+<li><a href="#plus" data-role="button" data-transition="pop">Plus</a></li>
+<li><a href="#" data-role="button" class="quit">Quitter</a>
+</ul>
+</div>
+</div>
+
+<!-- Start of options page -->
+
+<div data-role="page" id="plus">
+<div data-role="header">
+<h1>Muzeeli</h1>
+</div>
+<div data-role="content">
+<div id="radioname"></div>
+<a href="" id="share" data-role="button">Partager</a>
+<a href="" id="radiowebsite" data-role="button">Site web de la radio</a>
+</div>
+<div data-role="footer" class="footer">
+<ul data-role="controlgroup" data-type="horizontal" class="localnav">
+<li><a href="#player" data-role="button" data-transition="pop">Player</a></li>
+<li><a href="#sms" data-role="button" data-transition="pop">Dédicace</a></li>
+<li><a href="#facebook" data-role="button" data-transition="pop">Social</a></li>
+<li><a href="#plus" data-role="button" data-transition="pop" class="ui-btn-active">Plus</a></li>
+<li><a href="#" data-role="button" class="quit">Quitter</a>
+</ul>
+</div>
+</div>
+</body>
+</html>

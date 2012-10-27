@@ -1,0 +1,208 @@
+@CHARSET "UTF-8";
+
+#player, #sms, #facebook, #plus {	
+	background:#F77519;
+}
+
+#callmeback {
+	display:none;
+}
+
+#message {
+	display:block;
+}
+
+
+#error {
+	display:none;
+}
+
+.center {
+	text-align:center;
+}
+
+#radioname, #boxsong, #cover, #picto, #logosms {
+	background-repeat:no-repeat;
+	text-align:center;
+	width:220px;
+	margin-left:auto;
+	margin-right:auto;
+	}
+
+#radioname {
+	background-image:url(images/title.png);
+	width:327px;
+	height:61px;
+	}
+	
+#picto {
+	background-image:url(images/picto.png);
+	width:33px;
+	height:35px;
+	}
+#boxsong {
+	background-image:url(images/boxsong.png);
+	height:73px;
+	width:278px;
+	}
+
+#iconefacebook {
+	background-image:url(images/facebook.png);
+	height:48px;
+	width:48px;
+	border:0px;
+	margin:10px;
+	}
+
+#iconetwitter {
+	background-image:url(images/twitter.png);
+	height:48px;
+	width:48px;
+	border:0px;
+	margin:10px;
+	}
+
+#iconemyspace {
+	background-image:url(images/myspace.png);
+	height:48px;
+	width:48px;
+	border:0px;
+	margin:10px;
+	}
+
+#title {
+	color:#F6A734;
+	padding:3px;
+	font-weight:bold;
+	text-shadow:0 0 0;
+	
+	}
+#artists {
+	color:#EF6100;
+	padding:3px;
+	font-weight:bold;
+	text-shadow:0 0 0;
+	}
+
+#cover {
+	background-image:url(images/boxalbum.png);
+	height:200px;
+	}
+	
+#logosms {
+	background-image:url(images/logo_sms_plus.png);
+	height:34px;
+	width:117px;
+	}
+
+#cover img {
+	width:140px;
+	z-index:1;
+	padding-top:24px;
+	padding-right:13px;
+	}
+
+.footer {
+	position:absolute;
+	bottom:0;
+	}
+
+.localnav {
+	text-align:center;
+	margin-left:auto;
+	margin-right:auto;
+	width:2000px;
+	}
+	
+.ui-controlgroup-controls {
+	margin-left:auto;
+	margin-right:auto;
+	text-align:center;
+}
+	
+#text {
+	width:200px;
+	margin-left:auto;
+	margin-right:auto;
+	text-align:center;
+	border-radius: 10px 10px 10px 10px;
+	border:1px solid black;
+	background-color:#FFFFFF;
+	margin-top:10px;
+	margin-bottom:10px;
+}
+
+	
+@media all and (orientation:landscape)
+{
+#cover,#logosms {
+	background-repeat:no-repeat;
+	text-align:center;
+	width:220px;
+	margin-left:auto;
+	margin-right:auto;
+	}
+
+.playercentre {
+	margin-left:0;
+	margin-right:0;
+	text-align:center;
+	width:100%
+}
+	
+#boxsong {
+	background-image:url(images/boxsong.png);
+	background-repeat:no-repeat;
+	height:73px;
+	width:278px;
+	margin-left:auto;
+	margin-right:auto;
+	}
+
+#artists {
+	color:#EF6100;
+	padding:3px;
+	font-weight:bold;
+	text-shadow:0 0 0;
+	}
+
+#cover {
+	background-image:url(images/boxalbum.png);
+	background-repeat:no-repeat;
+	height:180px;
+	margin-left:auto;
+	margin-right:auto;
+	}
+	
+#cover img {
+	width:140px;
+	z-index:1;
+	padding-top:24px;
+	padding-right:13px;
+	}
+
+.colg, .cold {
+	float:left;
+	margin-left:auto;
+	margin-right:auto;
+	width:50%;
+	margin-bottom:0px;
+}
+
+.ui-block-a,.ui-block-b {
+	float:none;
+	margin-top:40px;
+	width:150px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.playerbas {
+	clear:left;
+	min-height:60px;
+}
+
+@media all and (max-device-width: 480px)
+{
+    /* Vos règles CSS pour les mobiles ici */
+}
